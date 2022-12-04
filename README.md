@@ -46,3 +46,7 @@ $ find -maxdepth 1 -type d -name 'day*' -not -name day00 | sort | xargs --replac
 + pytest -qq ./day04/part1.py ./day04/part2.py
 ..                                                                                                                                                                                        [100%]
 ```
+
+```console
+$ ./scripts/execute.sh
+```
