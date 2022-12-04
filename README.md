@@ -11,26 +11,26 @@
 $ find -maxdepth 1 -type d -name 'day*' -not -name day00 | sort | xargs --replace bash -xc 'python {}/part1.py {}/input.txt; python {}/part2.py {}/input.txt'
 + python ./day01/part1.py ./day01/input.txt
 71124
-> 945 μs
+> 636 μs
 + python ./day01/part2.py ./day01/input.txt
 204639
-> 741 μs
+> 696 μs
 + python ./day02/part1.py ./day02/input.txt
 11841
-> 1936 μs
+> 1513 μs
 + python ./day02/part2.py ./day02/input.txt
 13022
-> 1450 μs
+> 1428 μs
 + python ./day03/part1.py ./day03/input.txt
 7553
-> 762 μs
+> 772 μs
 + python ./day03/part2.py ./day03/input.txt
 2758
-> 692 μs
+> 450 μs
 + python ./day04/part1.py ./day04/input.txt
 448
-> 1820 μs
+> 1800 μs
 + python ./day04/part2.py ./day04/input.txt
 794
-> 1499 μs
+> 1500 μs
 ```
