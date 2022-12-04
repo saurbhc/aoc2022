@@ -34,3 +34,15 @@ $ find -maxdepth 1 -type d -name 'day*' -not -name day00 | sort | xargs --replac
 794
 > 1500 μs
 ```
+
+```console
+$ find -maxdepth 1 -type d -name 'day*' -not -name day00 | sort | xargs --replace bash -xc 'pytest -qq {}/part*.py;'
++ pytest -qq ./day01/part1.py ./day01/part2.py
+..                                                                                                                                                                                        [100%]
++ pytest -qq ./day02/part1.py ./day02/part2.py
+..                                                                                                                                                                                        [100%]
++ pytest -qq ./day03/part1.py ./day03/part2.py
+..                                                                                                                                                                                        [100%]
++ pytest -qq ./day04/part1.py ./day04/part2.py
+..                                                                                                                                                                                        [100%]
+```
