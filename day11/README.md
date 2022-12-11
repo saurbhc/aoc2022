@@ -1,5 +1,5 @@
 
-# HINT
+# HINT -- for part 2 "find another way to keep your worry levels manageable."
 
 
 Link: https://www.reddit.com/r/adventofcode/comments/zih7gf/comment/izr79go/?utm_source=share&utm_medium=web2x&context=3
