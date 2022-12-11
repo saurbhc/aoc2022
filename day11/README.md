@@ -6,3 +6,8 @@ Link: https://www.reddit.com/r/adventofcode/comments/zih7gf/comment/izr79go/?utm
 
 
 > I have no idea why this works. I don't know math that well, but what I did is multiply all of the testing numbers together, calling it "supermodulo", and every time a monkey inspects an item, set the item's value to the item mod the supermodulo, like item = item % supermodulo.
+
+
+Also:
+
+> The reason this works is because +, -, * are all equivalent if your modulus includes all your prime factors
