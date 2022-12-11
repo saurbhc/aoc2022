@@ -11,70 +11,101 @@
 $ find -maxdepth 1 -type d -name 'day*' -not -name day00 | sort | xargs --replace bash -xc 'python {}/part1.py {}/input.txt; python {}/part2.py {}/input.txt'
 + python ./day01/part1.py ./day01/input.txt
 71124
-> 697 μs
+> 764 μs
 + python ./day01/part2.py ./day01/input.txt
 204639
-> 2223 μs
+> 689 μs
 + python ./day02/part1.py ./day02/input.txt
 11841
-> 3220 μs
+> 1427 μs
 + python ./day02/part2.py ./day02/input.txt
 13022
-> 1739 μs
+> 1425 μs
 + python ./day03/part1.py ./day03/input.txt
 7553
-> 871 μs
+> 766 μs
 + python ./day03/part2.py ./day03/input.txt
 2758
-> 493 μs
+> 464 μs
 + python ./day04/part1.py ./day04/input.txt
 448
-> 1994 μs
+> 1811 μs
 + python ./day04/part2.py ./day04/input.txt
 794
-> 1916 μs
+> 1941 μs
 + python ./day05/part1.py ./day05/input.txt
 FJSRQCFTN
-> 1458 μs
+> 2096 μs
 + python ./day05/part2.py ./day05/input.txt
 CJVLJQPHS
-> 1277 μs
+> 1276 μs
 + python ./day06/part1.py ./day06/input.txt
 1848
-> 1108 μs
+> 764 μs
 + python ./day06/part2.py ./day06/input.txt
 2308
-> 1420 μs
+> 1645 μs
 + python ./day07/part1.py ./day07/input.txt
 1315285
-> 988 μs
+> 938 μs
 + python ./day07/part2.py ./day07/input.txt
 9847279
-> 944 μs
+> 926 μs
 + python ./day08/part1.py ./day08/input.txt
 1711
-> 353 ms
+> 470 ms
 + python ./day08/part2.py ./day08/input.txt
 301392
+> 472 ms
++ python ./day09/part1.py ./day09/input.txt
+6494
+> 9533 μs
++ python ./day09/part2.py ./day09/input.txt
+2691
+> 36673 μs
++ python ./day10/part1.py ./day10/input.txt
+11720
+> 343 μs
++ python ./day10/part2.py ./day10/input.txt
+####.###...##..###..####.###...##....##.
+#....#..#.#..#.#..#.#....#..#.#..#....#.
+###..#..#.#....#..#.###..#..#.#.......#.
+#....###..#....###..#....###..#.......#.
+#....#.#..#..#.#.#..#....#....#..#.#..#.
+####.#..#..##..#..#.####.#.....##...##..
+
+> 311 μs
++ python ./day11/part1.py ./day11/input.txt
+95472
+> 39425 μs
++ python ./day11/part2.py ./day11/input.txt
+17926061332
+> 11745 ms
 ```
 
 ```console
 + pytest -qq ./day01/part1.py ./day01/part2.py
-..                                                                                                           [100%]
+..                                                                             [100%]
 + pytest -qq ./day02/part1.py ./day02/part2.py
-..                                                                                                           [100%]
+..                                                                             [100%]
 + pytest -qq ./day03/part1.py ./day03/part2.py
-..                                                                                                           [100%]
+..                                                                             [100%]
 + pytest -qq ./day04/part1.py ./day04/part2.py
-..                                                                                                           [100%]
+..                                                                             [100%]
 + pytest -qq ./day05/part1.py ./day05/part2.py
-..                                                                                                           [100%]
+..                                                                             [100%]
 + pytest -qq ./day06/part1.py ./day06/part2.py
-.........                                                                                                    [100%]
+.........                                                                      [100%]
 + pytest -qq ./day07/part1.py ./day07/part2.py
-..                                                                                                           [100%]
+..                                                                             [100%]
 + pytest -qq ./day08/part1.py ./day08/part2.py
-..
+..                                                                             [100%]
++ pytest -qq ./day09/part1.py ./day09/part2.py
+...                                                                            [100%]
++ pytest -qq ./day10/part1.py ./day10/part2.py
+..                                                                             [100%]
++ pytest -qq ./day11/part1.py ./day11/part2.py
+..                                                                             [100%]
 ```
 
 ```console
