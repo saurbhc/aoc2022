@@ -112,7 +112,7 @@ CJVLJQPHS
 ..                                                                             [100%]
 + pytest -qq ./day11/part1.py ./day11/part2.py
 ..                                                                             [100%]
-pytest -qq ./day12/part1.py ./day12/part2.py
++ pytest -qq ./day12/part1.py ./day12/part2.py
 ..                                                                             [100%]
 ```
 
