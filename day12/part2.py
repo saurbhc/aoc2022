@@ -1,9 +1,9 @@
 from __future__ import annotations
 
+from collections import deque
 import argparse
 import math
 import os.path
-from collections import deque
 
 import pytest
 
@@ -20,20 +20,18 @@ MOVE = {
 }
 
 
-def move(s: list[list[str]], pos: tuple[int], move_direction: str):
+def move(s: list[list[str]], pos: tuple[int], move_direction: str) -> tuple[int] | None:
     _move = MOVE[move_direction]
-    # print(f"----- {pos} + {_move}")
     pos = (pos[0] + _move[0], pos[1] + _move[1])
-    # print(f"new pos {pos}")
 
     # is pos reachable
     if 0 <= pos[0] <= len(s) - 1 and 0 <= pos[1] <= len(s[0]) - 1:
         return pos
-    else:
-        return None
+
+    return None
 
 
-def get_val(s: list[list[str]], pos: tuple[int]):
+def get_val(s: list[list[str]], pos: tuple[int]) -> str:
     return s[pos[0]][pos[1]]
 
 
@@ -42,10 +40,11 @@ def get_ord(c: str) -> int:
         return 96
     elif c == 'E':
         return 123
+
     return ord(c)
 
 
-def get_S_pos(s):
+def get_S_pos(s: list[list[str]]) -> tuple[str, str]:
     for i, l in enumerate(s):
         for j, _l in enumerate(l):
             if _l == 'S':
@@ -54,7 +53,7 @@ def get_S_pos(s):
     raise ValueError("'S' Not found")
 
 
-def get_E_pos(s):
+def get_E_pos(s: list[list[str]]) -> tuple[str, str]:
     for i, l in enumerate(s):
         for j, _l in enumerate(l):
             if _l == 'E':
@@ -63,7 +62,7 @@ def get_E_pos(s):
     raise ValueError("'E' Not found")
 
 
-def get_A_poses(s):
+def get_A_poses(s: list[list[str]]) -> list[tuple[str, str]]:
     a_poses = []
     for i, l in enumerate(s):
         for j, _l in enumerate(l):

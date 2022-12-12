@@ -1,8 +1,8 @@
 from __future__ import annotations
 
+from collections import deque
 import argparse
 import os.path
-from collections import deque
 
 import pytest
 
@@ -21,15 +21,13 @@ MOVE = {
 
 def move(s: list[list[str]], pos: tuple[int], move_direction: str):
     _move = MOVE[move_direction]
-    # print(f"----- {pos} + {_move}")
     pos = (pos[0] + _move[0], pos[1] + _move[1])
-    # print(f"new pos {pos}")
 
     # is pos reachable
     if 0 <= pos[0] <= len(s) - 1 and 0 <= pos[1] <= len(s[0]) - 1:
         return pos
-    else:
-        return None
+
+    return None
 
 
 def get_val(s: list[list[str]], pos: tuple[int]):
