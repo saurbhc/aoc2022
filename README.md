@@ -93,6 +93,12 @@ CJVLJQPHS
 + python ./day13/part2.py ./day13/input.txt
 23504
 > 117 ms
++ python ./day15/part1.py ./day15/input.txt
+4879972
+> 4307 ms
++ python ./day15/part2.py ./day15/input.txt
+12525726647448
+> 120 ms
 ```
 
 ```console
@@ -121,6 +127,8 @@ CJVLJQPHS
 + pytest -qq ./day12/part1.py ./day12/part2.py
 ..                                                                             [100%]
 pytest -qq ./day13/part1.py ./day13/part2.py
+..                                                                             [100%]
+pytest -qq ./day15/part1.py ./day15/part2.py
 ..                                                                             [100%]
 ```
 
